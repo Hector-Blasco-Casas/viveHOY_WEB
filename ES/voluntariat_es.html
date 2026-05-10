@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>viveHOY - Contacto</title> <!-- Títol del lloc -->
+    <title>viveHOY - Voluntariado</title> <!-- Títol del lloc -->
     <link rel="stylesheet" href="../CSS/style.css"> <!-- Enllaç amb l'arxiu CSS -->
     <!-- Icones de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,35 +26,38 @@
                 <li><a href="index_es.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                 <li><a href="nosaltres_es.html"><i class="fa-solid fa-users"></i> Sobre nosotros</a></li>
                 <li><a href="donar_es.html"><i class="fa-solid fa-hand-holding-heart"></i> Donar</a></li>
-                <li><a href="contacte_es.html">Contacto</a></li>
+                <li><a href="voluntariat_es.html"><i class="fa-solid fa-handshake-angle"></i> Voluntariado</a></li>
+                <li><a href="contacte_es.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
             </ul>
         </nav>
         <!-- Botons de canvi d'idioma -->
         <div class="canvi-idioma">
-            <a href="../CA/contacte_ca.html" title="Català"><img src="../IMG/BANDERES/CA.png" alt="CA"></a>
-            <a href="contacte_es.html" title="Español"><img src="../IMG/BANDERES/ES.png" alt="ES"></a>
-            <a href="../EN/contacte_en.html" title="English"><img src="../IMG/BANDERES/EN.png" alt="EN"></a>
+            <a href="../CA/voluntariat_ca.html" title="Català"><img src="../IMG/BANDERES/CA.png" alt="CA"></a>
+            <a href="voluntariat_es.html" title="Español"><img src="../IMG/BANDERES/ES.png" alt="ES"></a>
+            <a href="../EN/voluntariat_en.html" title="English"><img src="../IMG/BANDERES/EN.png" alt="EN"></a>
         </div>
     </header>
 
     <!-- Contingut principal de la pàgina -->
     <main>
         <img src="../IMG/logo-sensefons.webp" alt="Logo viveHOY" class="logo-principal"> <!-- Logo del lloc web -->
-        <h2>Contacta con nosotros</h2> <!-- Títol del formulari -->
-        <p>¿Tienes alguna duda, necesitas ayuda o quieres colaborar? <strong>Rellena el formulario</strong> y te
-            responderemos lo antes posible.</p> <!-- Text fet per IA -->
+        <h2>Hazte Voluntario</h2> <!-- Títol del formulari -->
+        <p>¿Quieres formar parte de nuestro equipo y ayudar a los jóvenes? <strong>Apúntate como voluntario</strong> y súmate a nuestra causa.</p> <!-- Text fet per IA -->
 
-        <form action="#" method="get"> <!-- Formulari per introduir les dades del contacte -->
+        <form action="#" method="get"> <!-- Formulari per introduir les dades de voluntariat -->
             <label for="nom">Nombre:</label> <!-- Text del primer camp del formulari -->
             <input type="text" id="nom" name="nom" required> <!-- Camp per introduir el nom -->
 
-            <label for="email">Correo electrónico:</label> <!-- Text del segon camp del formulari -->
-            <input type="email" id="email" name="email" required> <!-- Camp per introduir el correu electrònic -->
+            <label for="cognoms">Apellidos:</label> <!-- Text del segon camp del formulari -->
+            <input type="text" id="cognoms" name="cognoms" required> <!-- Camp per introduir els cognoms -->
 
-            <label for="missatge">Mensaje:</label> <!-- Text del tercer camp del formulari -->
-            <textarea id="missatge" name="missatge" rows="5" required></textarea> <!-- Camp per introduir el missatge -->
+            <label for="residencia">Lugar de residencia:</label> <!-- Text del tercer camp del formulari -->
+            <input type="text" id="residencia" name="residencia" required> <!-- Camp per introduir el lloc de residència -->
 
-            <button type="submit">Enviar mensaje</button> <!-- Botó per enviar el missatge -->
+            <label for="estudis">Estudios cursados:</label> <!-- Text del quart camp del formulari -->
+            <input type="text" id="estudis" name="estudis" required> <!-- Camp per introduir els estudis cursats -->
+
+            <button type="submit">Enviar solicitud</button> <!-- Botó per enviar la sol·licitud -->
         </form>
     </main>
 
