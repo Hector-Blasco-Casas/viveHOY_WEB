@@ -1,4 +1,5 @@
-<h2> Lloc web oficial de l'ONG viveHOY - Héctor Blasco Casas, Gabriel Duràn Gàlvez i Mari Sena Dandjinou </h2>
+<h2> Héctor Blasco Casas, Gabriel Duràn Gàlvez i Mari Sena Dandjinou </h2>
+<h3> Repositori oficial del projecte sobre l'ONG <strong>viveHOY</strong> </h3>
 <p><strong>NOTA:</strong>Si voleu instal·lar el certificat d'entitat certificadora al vostre equip, os adjunto un <a href="https://www.mediafire.com/file/7xnp5yhp8ujwu6v/viveHOY-CA.cer/file">enllaç per descarregar el certificat.</a></p>
 
 <p align="center">
