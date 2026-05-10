@@ -221,9 +221,15 @@ button[type="submit"]:hover { /* Quan es posa el ratolí sobre el botó d'enviar
 footer { /* Al peu de pàgina */
     background-color: #0F57A3; /* El color de fons del peu de pàgina */
     color: white; /* El color del text del peu de pàgina */
-    text-align: center; /* El text del peu de pàgina es centra */
-    padding: 25px; /* El padding del peu de pàgina */
+    display: flex; /* Utilitzem flexbox per alinear el contingut */
+    justify-content: center; /* Centrem horitzontalment */
+    align-items: center; /* Centrem verticalment */
+    padding: 10px; /* El padding del peu de pàgina reduït per fer-lo més fi */
     margin-top: auto; /* El peu de pàgina es col·loca a baix de tot */
+}
+
+footer p { /* Al text del peu de pàgina */
+    margin: 0; /* Traiem els marges per defecte perquè quedi ben centrat */
 }
 
 /* Estils per a pantalles petites (mòbils i tauletes) */
