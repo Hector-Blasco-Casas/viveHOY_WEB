@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+    
+img {
+    width: 20%;
+}
+
+h1 {
+    color: #055AAB;
+}
+
+p {
+    color: #338729;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 50%;
+    }
+
+    .contenedor {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
