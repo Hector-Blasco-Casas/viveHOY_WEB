@@ -4,7 +4,7 @@
 
 Hola, Alberto, Agnès, Pedro y Gerard,
 
-Esta es nuestra página web oficial pensada para la ONG que hemos creado. Tenéis todos los commits con mensajes mínimamente detallados y todo el contenido de la página tal cual.
+Aquest és el nostre lloc web oficial, pensat per l'ONG que hem creat. Teniu tots els commit amb missatges mínimament detallats i tot el contingut de la pàgina tal cual.
 
-Gracias,
-Saludos.
+Gràcies,
+Salutacions.
