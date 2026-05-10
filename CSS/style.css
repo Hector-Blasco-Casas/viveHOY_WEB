@@ -8,7 +8,11 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('../IMG/Fons.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f4f4f4; /* Color de respaldo */
     color: #333;
     display: flex;
     flex-direction: column;
