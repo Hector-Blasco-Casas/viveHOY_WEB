@@ -1,45 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Arial', sans-serif;
+* { /* A tota la pàgina */
+    margin: 0; /* Elimina el marge superior i inferior */
+    padding: 0; /* Elimina el padding */
+    box-sizing: border-box; /* Inclou el padding i el border en el càlcul de l'ample i l'alt */
+    background-color: white; /* Color de fons per defecte */
+    font-family: 'Arial', sans-serif; /* Tipografia per defecte */
 }
 
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40%;
+.contenedor { /* Al contenidor principal */
+    display: flex; /* Fem que el contenidor sigui flexible */
+    flex-direction: column; /* Els elements es col·loquen en columna */
+    align-items: center; /* Els elements s'alineen al centre */
+    justify-content: center; /* Els elements es centren verticalment */
+    height: 40%; /* L'altura del contenidor */
 }
     
-img {
-    width: 20%;
+img { /* A les imatges */
+    width: 20%; /* L'amplada de les imatges */
 }
 
-h1 {
-    color: #055AAB;
+h1 { /* A les capçaleres */
+    color: #055AAB; /* Color blau de la capçalera */
 }
 
-p {
-    color: #338729;
+p { /* Als paràgrafs */
+    color: #338729; /* Color verd del text */
 }
 
-@media (max-width: 768px) {
-    img {
-        width: 50%;
+@media (max-width: 768px) { /* Estils per a pantalles petites (mòbils i tauletes) */
+    img { /* La imatge en pantalles petites */
+        width: 50%; /* L'amplada de la imatge augmenta */
     }
 
-    .contenedor {
-        margin-top: 20px;
+    .contenedor { /* El contenidor en pantalles petites */
+        margin-top: 20px; /* S'afegeix marge superior */
     }
 
-    h1 {
-        font-size: 20px;
+    h1 { /* La capçalera en pantalles petites */
+        font-size: 20px; /* La mida de la font disminueix */
     }
 
-    p {
-        font-size: 14px;
+    p { /* El text en pantalles petites */
+        font-size: 14px; /* La mida del text disminueix */
     }
 }
