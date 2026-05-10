@@ -36,12 +36,19 @@ header {
 }
 
 .logo img {
-    height: 70px;
+    height: 110px;
+    margin: -20px 0;
     transition: transform 0.3s ease;
 }
 
 .logo img:hover {
     transform: scale(1.05);
+}
+
+.main-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-height: 120px;
 }
 
 /* Navegació */
