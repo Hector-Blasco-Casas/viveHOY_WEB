@@ -1,4 +1,6 @@
-![Logotipo de viveHOY](./IMG/logo.webp)   
+<p align="center">
+  <img src="./IMG/logo.webp" alt="Logotip de viveHOY"
+</p>
 
 Hola, Alberto, Agnès, Pedro y Gerard,
 
