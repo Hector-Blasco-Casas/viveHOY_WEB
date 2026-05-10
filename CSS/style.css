@@ -21,7 +21,7 @@ body { /* A tota el cos */
 
 header { /* A la capçalera */
     background-color: #ffffff; /* Color de fons de la capçalera */
-    border-bottom: 5px solid #21772C; /* Borde inferior de la capçalera */
+    border-bottom: 5px solid #4D7011; /* Borde inferior de la capçalera */
     padding: 20px 40px; /* Padding de la capçalera */
     display: flex; /* Fem que la capçalera sigui un contenidor flexible */
     justify-content: space-between; /* Els elements de la capçalera es separen */
@@ -61,7 +61,7 @@ nav ul li a { /* A cada element de la navegació */
 }
 
 nav ul li a:hover { /* Quan es posa el ratolí sobre cada element de la navegació */
-    color: #21772C; /* El color del text quan es posa el ratolí sobre cada element de la navegació */
+    color: #4D7011; /* El color del text quan es posa el ratolí sobre cada element de la navegació */
     text-decoration: underline; /* Es posa una ratlla sota el text quan es posa el ratolí sobre cada element de la navegació */
 }
 
@@ -112,7 +112,7 @@ p { /* Al text */
 
 .boto { /* Al botó */
     display: inline-block; /* El botó es mostra com un bloc */
-    background-color: #21772C; /* El color de fons del botó */
+    background-color: #FA7A0B; /* El color de fons del botó */
     color: white; /* El color del text del botó */
     padding: 12px 25px; /* El padding del botó */
     text-decoration: none; /* Es treu la decoració del text */
@@ -137,7 +137,7 @@ p { /* Al text */
 
 .baner h1 { /* A la capçalera del bàner */
     font-size: 2.5em; /* La mida de la font de la capçalera del bàner */
-    color: #21772C; /* El color de la capçalera del bàner */
+    color: #4D7011; /* El color de la capçalera del bàner */
 }
 
 .contenidor-serveis { /* Al contenidor de serveis */
@@ -152,9 +152,9 @@ p { /* Al text */
     padding: 30px; /* El padding de la caixa de servei */
     border-radius: 8px; /* Els extrems de la caixa de servei es rounded */
     text-align: center; /* El text de la caixa de servei es centra */
-    border-top: 5px solid #21772C; /* Borde superior de la caixa de servei */
+    border-top: 5px solid #4D7011; /* Borde superior de la caixa de servei */
     border: 1px solid #ddd; /* Borde de la caixa de servei */
-    border-top: 5px solid #21772C; /* Borde superior de la caixa de servei */
+    border-top: 5px solid #4D7011; /* Borde superior de la caixa de servei */
 }
 
 .caixa-servei:hover { /* Quan es posa el ratolí sobre la caixa de servei */
@@ -174,7 +174,7 @@ form { /* Al formulari */
 label { /* A les etiquetes dels camps del formulari */
     display: block; /* Cada etiqueta es mostra com un bloc */
     font-weight: bold; /* El text de les etiquetes es posa en negreta */
-    color: #21772C; /* El color del text de les etiquetes */
+    color: #4D7011; /* El color del text de les etiquetes */
     margin-bottom: 5px; /* El marge inferior de les etiquetes */
     margin-top: 20px; /* El marge superior de les etiquetes */
 }
@@ -193,7 +193,7 @@ input:focus, textarea:focus { /* Quan es fa clic sobre un camp de text */
 }
 
 button[type="submit"] { /* Al botó d'enviar del formulari */
-    background-color: #0F57A3; /* El color de fons del botó */
+    background-color: #FA7A0B; /* El color de fons del botó */
     color: white; /* El color del text del botó */
     padding: 15px 25px; /* El padding del botó */
     border: none; /* Es treu el borde del botó */
@@ -205,7 +205,7 @@ button[type="submit"] { /* Al botó d'enviar del formulari */
 }
 
 button[type="submit"]:hover { /* Quan es posa el ratolí sobre el botó d'enviar */
-    background-color: #21772C; /* El color de fons del botó canvia a verd */
+    background-color: #4D7011; /* El color de fons del botó canvia a verd */
 }
 
 .text-dreta { /* Classe per alinear el contingut a la dreta */
