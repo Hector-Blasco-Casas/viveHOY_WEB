@@ -1,270 +1,263 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); /* Importem la font Rubik */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { /* A tota la pàgina */
+    margin: 0; /* Elimina el marge superior i inferior */
+    padding: 0; /* Elimina el padding */
+    box-sizing: border-box; /* Inclou el padding i el border en el càlcul de l'ample i l'alt */
 }
 
-body {
-    font-family: 'Rubik', sans-serif;
-    background-image: url('../IMG/Fons.png');
-    background-size: cover;
-    background-position: center;
-    background-color: #f4f4f4; /* Color de respaldo */
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body { /* A tota el cos */
+    font-family: 'Rubik', sans-serif; /* Posem la font Rubik a tota la pàgina */
+    background-image: url('../IMG/Fons.png'); /* Posem la imatge de fons */
+    background-size: cover; /* La imatge de fons cobreix tota la pantalla */
+    background-position: center; /* La imatge de fons es centra */
+    background-color: #f4f4f4; /* Color de fons (per si la imatge no carrega) */
+    color: #333; /* Color per defecte del text */
+    display: flex; /* Fem que el cos sigui un contenidor flexible */
+    flex-direction: column; /* Col·loquem els elements en columna */
+    min-height: 100vh; /* L'altura mínima del cos és del 100% de la pantalla */
 }
 
-.animat {
-    animation: fadeIn 0.8s;
+
+header { /* A la capçalera */
+    background-color: #ffffff; /* Color de fons de la capçalera */
+    border-bottom: 5px solid #21772C; /* Borde inferior de la capçalera */
+    padding: 20px 40px; /* Padding de la capçalera */
+    display: flex; /* Fem que la capçalera sigui un contenidor flexible */
+    justify-content: space-between; /* Els elements de la capçalera es separen */
+    align-items: center; /* Els elements de la capçalera s'alineen al centre */
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.logotip img { /* Al logotip */
+    height: 110px; /* L'altura del logotip */
+    margin: -20px 0; /* El marge del logotip */
 }
 
-header {
-    background-color: #ffffff;
-    border-bottom: 5px solid #21772C;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logotip img:hover { /* Quan es posa el ratolí sobre el logotip */
+    opacity: 0.85; /* Quan es posa el ratolí sobre el logotip, l'opacitat canvia a 0.85 */
 }
 
-.logotip img {
-    height: 110px;
-    margin: -20px 0;
+.logo-principal { /* Al logotip principal */
+    display: block; /* El logotip principal es mostra com un bloc */
+    margin: 0 auto 20px auto; /* El marge del logotip principal */
+    max-height: 120px; /* L'altura màxima del logotip principal */
 }
 
-.logotip img:hover {
-    opacity: 0.85;
+nav ul { /* A la navegació */
+    list-style-type: none; /* Es treuen els punts de la llista */
+    display: flex; /* Fem que la navegació sigui un contenidor flexible */
 }
 
-.logo-principal {
-    display: block;
-    margin: 0 auto 20px auto;
-    max-height: 120px;
+nav ul li { /* A la llista de la navegació */
+    margin: 0 15px; /* El marge de cada element de la llista */
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
+nav ul li a { /* A cada element de la navegació */
+    text-decoration: none; /* Es treu la decoració del text */
+    color: #0F57A3; /* El color del text */
+    font-size: 18px; /* La mida de la font */
+    font-weight: bold; /* El text es posa en negreta */
+    padding-bottom: 5px; /* El padding inferior */
 }
 
-nav ul li {
-    margin: 0 15px;
+nav ul li a:hover { /* Quan es posa el ratolí sobre cada element de la navegació */
+    color: #21772C; /* El color del text quan es posa el ratolí sobre cada element de la navegació */
+    text-decoration: underline; /* Es posa una ratlla sota el text quan es posa el ratolí sobre cada element de la navegació */
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #0F57A3;
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 5px;
+.canvi-idioma { /* Al canvi d'idioma */
+    display: flex; /* Fem que el canvi d'idioma sigui un contenidor flexible */
+    align-items: center; /* Els elements del canvi d'idioma s'alineen al centre */
+    gap: 10px; /* La separació entre els elements del canvi d'idioma */
 }
 
-nav ul li a:hover {
-    color: #21772C;
-    text-decoration: underline;
+.canvi-idioma a { /* A cada element del canvi d'idioma */
+    text-decoration: none; /* Es treu la decoració del text */
+    display: inline-block; /* Cada element del canvi d'idioma es mostra com un bloc */
 }
 
-.canvi-idioma {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.canvi-idioma a:hover { /* Quan es posa el ratolí sobre cada element del canvi d'idioma */
+    opacity: 0.8; /* Quan es posa el ratolí sobre cada element del canvi d'idioma, l'opacitat canvia a 0.8 */
 }
 
-.canvi-idioma a {
-    text-decoration: none;
-    display: inline-block;
+.canvi-idioma img { /* A cada bandera del canvi d'idioma */
+    width: 35px; /* L'amplada de cada bandera */
+    height: auto; /* L'altura de cada bandera */
+    border-radius: 4px; /* Els extrems de cada bandera es rounded */
+    border: 1px solid #ccc; /* El borde de cada bandera */
+    display: block; /* Cada bandera es mostra com un bloc */
 }
 
-.canvi-idioma a:hover {
-    opacity: 0.8;
+main { /* Al contingut principal */
+    max-width: 1000px; /* L'amplada màxima del contingut principal */
+    width: 90%; /* L'amplada del contingut principal */
+    margin: 40px auto; /* El marge del contingut principal */
+    background-color: white; /* El color de fons del contingut principal */
+    padding: 50px; /* El padding del contingut principal */
+    border-radius: 10px; /* Els extrems del contingut principal es rounded */
+    border: 1px solid #ddd; /* El borde del contingut principal */
+    flex: 1; /* El contingut principal ocupa tot l'espai disponible */
 }
 
-.canvi-idioma img {
-    width: 35px;
-    height: auto;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    display: block;
+h1, h2 { /* A les capçaleres */
+    color: #0F57A3; /* El color de les capçaleres */
+    margin-bottom: 20px; /* El marge inferior de les capçaleres */
 }
 
-main {
-    max-width: 1000px;
-    width: 90%;
-    margin: 40px auto;
-    background-color: white;
-    padding: 50px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    flex: 1;
+p { /* Al text */
+    line-height: 1.8; /* L'altura de línia del text */
+    margin-bottom: 15px; /* El marge inferior del text */
+    font-size: 1.1em; /* La mida de la font */
 }
 
-h1, h2 {
-    color: #0F57A3;
-    margin-bottom: 20px;
+.boto { /* Al botó */
+    display: inline-block; /* El botó es mostra com un bloc */
+    background-color: #21772C; /* El color de fons del botó */
+    color: white; /* El color del text del botó */
+    padding: 12px 25px; /* El padding del botó */
+    text-decoration: none; /* Es treu la decoració del text */
+    border-radius: 8px; /* Els extrems del botó es rounded */
+    font-size: 18px; /* La mida de la font del botó */
+    font-weight: bold; /* El text del botó es posa en negreta */
+    margin-top: 20px; /* El marge superior del botó */
 }
 
-p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-    font-size: 1.1em;
+.boto:hover { /* Quan es posa el ratolí sobre el botó */
+    background-color: #0F57A3; /* El color de fons del botó quan es posa el ratolí sobre el botó */
 }
 
-.boto {
-    display: inline-block;
-    background-color: #21772C;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
+.baner { /* Al bàner */
+    background-color: #e8f5e9; /* El color de fons del bàner */
+    padding: 60px 40px; /* El padding del bàner */
+    border-radius: 10px; /* Els extrems del bàner es rounded */
+    text-align: center; /* El text del bàner es centra */
+    margin-bottom: 40px; /* El marge inferior del bàner */
+    border: 1px solid #c8e6c9; /* El borde del bàner */
 }
 
-.boto:hover {
-    background-color: #0F57A3;
+.baner h1 { /* A la capçalera del bàner */
+    font-size: 2.5em; /* La mida de la font de la capçalera del bàner */
+    color: #21772C; /* El color de la capçalera del bàner */
 }
 
-.baner {
-    background-color: #e8f5e9;
-    padding: 60px 40px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 40px;
-    border: 1px solid #c8e6c9;
+.contenidor-serveis { /* Al contenidor de serveis */
+    display: flex; /* Fem que el contenidor de serveis sigui un contenidor flexible */
+    gap: 20px; /* La separació entre els elements del contenidor de serveis */
+    margin-top: 30px; /* El marge superior del contenidor de serveis */
 }
 
-.baner h1 {
-    font-size: 2.5em;
-    color: #21772C;
+.caixa-servei { /* A la caixa de servei */
+    flex: 1; /* La caixa de servei ocupa tot l'espai disponible */
+    background-color: #f9f9f9; /* El color de fons de la caixa de servei */
+    padding: 30px; /* El padding de la caixa de servei */
+    border-radius: 8px; /* Els extrems de la caixa de servei es rounded */
+    text-align: center; /* El text de la caixa de servei es centra */
+    border-top: 5px solid #21772C; /* Borde superior de la caixa de servei */
+    border: 1px solid #ddd; /* Borde de la caixa de servei */
+    border-top: 5px solid #21772C; /* Borde superior de la caixa de servei */
 }
 
-.contenidor-serveis {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
+.caixa-servei:hover { /* Quan es posa el ratolí sobre la caixa de servei */
+    background-color: #e8f5e9; /* El color de fons de la caixa de servei quan es posa el ratolí sobre la caixa de servei */
 }
 
-.caixa-servei {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    border-top: 5px solid #21772C;
-    border: 1px solid #ddd;
-    border-top: 5px solid #21772C;
+.caixa-servei h3 { /* A la capçalera de la caixa de servei */
+    color: #0F57A3; /* El color de la capçalera de la caixa de servei */
+    margin-bottom: 15px; /* El marge inferior de la capçalera de la caixa de servei */
+    font-size: 1.3em; /* La mida de la font de la capçalera de la caixa de servei */
 }
 
-.caixa-servei:hover {
-    background-color: #e8f5e9;
+form { /* Al formulari */
+    margin-top: 20px; /* El marge superior del formulari */
 }
 
-.caixa-servei h3 {
-    color: #0F57A3;
-    margin-bottom: 15px;
-    font-size: 1.3em;
+label { /* A les etiquetes dels camps del formulari */
+    display: block; /* Cada etiqueta es mostra com un bloc */
+    font-weight: bold; /* El text de les etiquetes es posa en negreta */
+    color: #21772C; /* El color del text de les etiquetes */
+    margin-bottom: 5px; /* El marge inferior de les etiquetes */
+    margin-top: 20px; /* El marge superior de les etiquetes */
 }
 
-form {
-    margin-top: 20px;
+input[type="text"], input[type="email"], input[type="number"], textarea { /* Als camps de text del formulari */
+    width: 100%; /* L'amplada dels camps de text */
+    padding: 12px; /* El padding dels camps de text */
+    border: 2px solid #ddd; /* El borde dels camps de text */
+    border-radius: 6px; /* Els extrems dels camps de text es rounded */
+    font-family: inherit; /* La font dels camps de text és la mateixa que la del cos */
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    color: #21772C;
-    margin-bottom: 5px;
-    margin-top: 20px;
+input:focus, textarea:focus { /* Quan es fa clic sobre un camp de text */
+    border-color: #0F57A3; /* El color del borde del camp de text canvia a blau */
+    outline: none; /* Es treu el contorn per defecte del navegador */
 }
 
-input[type="text"], input[type="email"], input[type="number"], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    font-family: inherit;
+button[type="submit"] { /* Al botó d'enviar del formulari */
+    background-color: #0F57A3; /* El color de fons del botó */
+    color: white; /* El color del text del botó */
+    padding: 15px 25px; /* El padding del botó */
+    border: none; /* Es treu el borde del botó */
+    border-radius: 6px; /* Els extrems del botó es rounded */
+    font-size: 18px; /* La mida de la font del botó */
+    font-weight: bold; /* El text del botó es posa en negreta */
+    cursor: pointer; /* El cursor canvia quan es posa el ratolí sobre el botó */
+    margin-top: 25px; /* El marge superior del botó */
 }
 
-input:focus, textarea:focus {
-    border-color: #0F57A3;
-    outline: none;
+button[type="submit"]:hover { /* Quan es posa el ratolí sobre el botó d'enviar */
+    background-color: #21772C; /* El color de fons del botó canvia a verd */
 }
 
-button[type="submit"] {
-    background-color: #0F57A3;
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 25px;
+.text-dreta { /* Classe per alinear el contingut a la dreta */
+    text-align: right; /* El text s'alinea a la dreta */
+    margin-top: 15px; /* El marge superior */
 }
 
-button[type="submit"]:hover {
-    background-color: #21772C;
+.boto-petit { /* Classe per fer el botó més petit */
+    font-size: 14px; /* La mida de la font del botó petit */
+    padding: 8px 15px; /* El padding del botó petit */
 }
 
-.text-dreta {
-    text-align: right;
-    margin-top: 15px;
+footer { /* Al peu de pàgina */
+    background-color: #0F57A3; /* El color de fons del peu de pàgina */
+    color: white; /* El color del text del peu de pàgina */
+    text-align: center; /* El text del peu de pàgina es centra */
+    padding: 25px; /* El padding del peu de pàgina */
+    margin-top: auto; /* El peu de pàgina es col·loca a baix de tot */
 }
 
-.boto-petit {
-    font-size: 14px;
-    padding: 8px 15px;
-}
-
-footer {
-    background-color: #0F57A3;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: auto;
-}
-
+/* Estils per a pantalles petites (mòbils i tauletes) */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+    header { /* La capçalera en pantalles petites */
+        flex-direction: column; /* Els elements de la capçalera es col·loquen en columna */
+        padding: 20px; /* El padding de la capçalera */
+        text-align: center; /* El text de la capçalera es centra */
     }
 
-    nav ul {
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    nav ul { /* La navegació en pantalles petites */
+        flex-direction: column; /* Els elements de la navegació es col·loquen en columna */
+        margin-top: 20px; /* El marge superior de la navegació */
+        margin-bottom: 20px; /* El marge inferior de la navegació */
     }
 
-    nav ul li {
-        margin: 10px 0;
+    nav ul li { /* Cada element de la navegació en pantalles petites */
+        margin: 10px 0; /* El marge de cada element de la navegació */
     }
 
-    .contenidor-serveis {
-        flex-direction: column;
+    .contenidor-serveis { /* El contenidor de serveis en pantalles petites */
+        flex-direction: column; /* Les caixes de servei es col·loquen en columna */
     }
 
-    main {
-        padding: 30px 20px;
-        margin: 20px auto;
+    main { /* El contingut principal en pantalles petites */
+        padding: 30px 20px; /* El padding del contingut principal */
+        margin: 20px auto; /* El marge del contingut principal */
     }
 
-    .baner {
-        padding: 40px 20px;
+    .baner { /* El bàner en pantalles petites */
+        padding: 40px 20px; /* El padding del bàner */
     }
 
-    .baner h1 {
-        font-size: 2em;
+    .baner h1 { /* La capçalera del bàner en pantalles petites */
+        font-size: 2em; /* La mida de la font de la capçalera del bàner */
     }
 }
