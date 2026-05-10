@@ -2,14 +2,16 @@
 
 <!DOCTYPE html>
 <html lang="es"> <!-- Fiquem que el lloc sigui en castellà -->
+
 <head>
     <!-- Metadades de la pàgina que fica Visual Studio Code quan fiquem la comanda "!" -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>viveHOY - Contacto</title> <!-- Títol del lloc -->
     <link rel="stylesheet" href="../CSS/style.css"> <!-- Enllaç amb l'arxiu CSS -->
 </head>
+
 <body>
     <!-- Capçalera del lloc web-->
     <header>
@@ -35,21 +37,22 @@
 
     <!-- Contingut principal de la pàgina -->
     <main>
-        <img src="../IMG/logo-sensefons.webp" alt="Logo viveHOY" class="logo-principal">
-        <h2>Contacta con nosotros</h2>
-        <p>¿Tienes alguna duda, necesitas ayuda o quieres colaborar? Rellena el formulario y te responderemos lo antes posible.</p> <!-- Text fet per IA -->
-        
-        <form action="#" method="get">
-            <label for="nom">Nombre:</label>
-            <input type="text" id="nom" name="nom" required>
+        <img src="../IMG/logo-sensefons.webp" alt="Logo viveHOY" class="logo-principal"> <!-- Logo del lloc web -->
+        <h2>Contacta con nosotros</h2> <!-- Títol del formulari -->
+        <p>¿Tienes alguna duda, necesitas ayuda o quieres colaborar? <strong>Rellena el formulario</strong> y te
+            responderemos lo antes posible.</p> <!-- Text fet per IA -->
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+        <form action="#" method="get"> <!-- Formulari per introduir les dades del contacte -->
+            <label for="nom">Nombre:</label> <!-- Text del primer camp del formulari -->
+            <input type="text" id="nom" name="nom" required> <!-- Camp per introduir el nom -->
 
-            <label for="missatge">Mensaje:</label>
-            <textarea id="missatge" name="missatge" rows="5" required></textarea>
+            <label for="email">Correo electrónico:</label> <!-- Text del segon camp del formulari -->
+            <input type="email" id="email" name="email" required> <!-- Camp per introduir el correu electrònic -->
 
-            <button type="submit">Enviar mensaje</button>
+            <label for="missatge">Mensaje:</label> <!-- Text del tercer camp del formulari -->
+            <textarea id="missatge" name="missatge" rows="5" required></textarea> <!-- Camp per introduir el missatge -->
+
+            <button type="submit">Enviar mensaje</button> <!-- Botó per enviar el missatge -->
         </form>
     </main>
 
@@ -58,4 +61,5 @@
         <p>&copy; 2026 ONG viveHOY. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>

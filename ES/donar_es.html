@@ -2,14 +2,16 @@
 
 <!DOCTYPE html>
 <html lang="es"> <!-- Fiquem que el lloc sigui en castellà -->
+
 <head>
     <!-- Metadades de la pàgina que fica Visual Studio Code quan fiquem la comanda "!" -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>viveHOY - Donar</title> <!-- Títol del lloc -->
     <link rel="stylesheet" href="../CSS/style.css"> <!-- Enllaç amb l'arxiu CSS -->
 </head>
+
 <body>
     <!-- Capçalera del lloc web-->
     <header>
@@ -36,32 +38,38 @@
     <!-- Contingut principal de la pàgina -->
     <main>
         <h2>Haz un donativo</h2>
-        <p>Tu aportación nos ayuda a mantener nuestros servicios activos y a seguir ayudando a más jóvenes a encontrar un hogar.</p> <!-- Text fet per IA -->
-        
-        <form action="#" method="get">
-            <label for="quantitat">Cantidad a donar (€):</label>
-            <input type="number" id="quantitat" name="quantitat" min="1" required>
+        <p><strong>Tu aportación nos ayuda a mantener nuestros servicios activos</strong> y a seguir ayudando a más
+            jóvenes a encontrar un hogar.</p> <!-- Text fet per IA -->
 
-            <label for="nom">Nombre completo:</label>
-            <input type="text" id="nom" name="nom" required>
+        <form action="#" method="get"> <!-- Formulari per introduir les dades del donatiu -->
+            <label for="quantitat">Cantidad a donar (€):</label> <!-- Text del primer camp del formulari-->
+            <input type="number" id="quantitat" name="quantitat" min="1" required> <!-- Camp per introduir la quantitat a donar-->
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="nom">Nombre completo:</label> <!-- Text del segon camp del formulari-->
+            <input type="text" id="nom" name="nom" required> <!-- Camp per introduir el nom complet-->
 
-            <h3 style="margin-top: 30px;">Datos bancarios</h3>
-            <label for="titular">Titular de la tarjeta:</label>
-            <input type="text" id="titular" name="titular" required>
+            <label for="email">Correo electrónico:</label> <!-- Text del tercer camp del formulari-->
+            <input type="email" id="email" name="email" required> <!-- Camp per introduir el correu electrònic-->
 
-            <label for="targeta">Número de tarjeta:</label>
-            <input type="text" id="targeta" name="targeta" pattern="[0-9]{16}" placeholder="1234123412341234" required>
+            <br>
+            <fieldset style="border: 1px solid #ccc; padding: 15px; margin-top: 20px;">
+                <legend style="color: #0F57A3; font-weight: bold;">Datos bancarios</legend> <!-- Text del títol del fieldset-->
+                <label for="titular">Titular de la tarjeta:</label> <!-- Text del quart camp del formulari-->
+                <input type="text" id="titular" name="titular" required> <!-- Camp per introduir el titular de la targeta -->
 
-            <label for="caducitat">Fecha de caducidad (MM/AA):</label>
-            <input type="text" id="caducitat" name="caducitat" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" placeholder="MM/AA" required>
+                <label for="targeta">Número de tarjeta:</label> <!-- Text del cinquè camp del formulari -->
+                <input type="text" id="targeta" name="targeta" pattern="[0-9]{16}" placeholder="1234123412341234"
+                    required> <!-- Camp per introduir el número de la targeta -->
 
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" placeholder="123" required>
+                <label for="caducitat">Fecha de caducidad (MM/AA):</label> <!-- Text del sisè camp del formulari -->
+                <input type="text" id="caducitat" name="caducitat" pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
+                    placeholder="MM/AA" required> <!-- Camp per introduir la data de caducitat -->
 
-            <button type="submit">Donar ahora</button>
+                <label for="cvv">CVV:</label> <!-- Text del setè camp del formulari -->
+                <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" placeholder="123" required> <!-- Camp per introduir el CVV -->
+            </fieldset>
+
+            <button type="submit">Donar ahora</button> <!-- Botó per enviar el donatiu -->
         </form>
     </main>
 
@@ -70,4 +78,5 @@
         <p>&copy; 2026 ONG viveHOY. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
