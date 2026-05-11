@@ -12,3 +12,5 @@ Aquest és el nostre lloc web oficial, pensat per l'ONG que hem creat. Teniu tot
 
 Gràcies,
 Salutacions.
+
+<p><strong>PD (Gabriel):</strong> La pàgina web s'ha fet fent servir l'extensió "Live Sharing" de VS Code, és per això que tots els commits s'han fet per l'Héctor Blasco.</p>
