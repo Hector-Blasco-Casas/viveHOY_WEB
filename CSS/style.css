@@ -4,6 +4,7 @@
     margin: 0; /* Elimina el marge superior i inferior */
     padding: 0; /* Elimina el padding */
     box-sizing: border-box; /* Inclou el padding i el border en el càlcul de l'ample i l'alt */
+    cursor: url('../IMG/cursor.png'), auto; /* Posem el cursor personalitzat */
 }
 
 body { /* A tota el cos */
