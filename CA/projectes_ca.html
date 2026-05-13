@@ -1,0 +1,107 @@
+<!-- Lloc web fet per Héctor Blasco Casas, Gabriel Duràn Gàlvez i Mari Sena Dandjinou -->
+
+<!DOCTYPE html>
+<html lang="ca"> <!-- Fiquem que el lloc sigui en català -->
+
+<head>
+    <!-- Metadades de la pàgina que fica Visual Studio Code quan fiquem la comanda "!" -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>viveHOY - Projectes</title> <!-- Títol del lloc -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Enllaç amb l'arxiu CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- Enllaç amb el CSS de Bootstrap -->
+    <!-- Enllaçades icones de FontAwesome -->
+    <link rel="icon" type="image/x-icon" href="../IMG/webicon.ico"> <!-- Icona de la web -->
+</head>
+
+<body>
+    <!-- Capçalera del lloc web-->
+    <header>
+        <div class="logotip">
+            <a href="../index.html"><img src="../IMG/logo-sensefons.png" alt="Logo viveHOY"></a>
+        </div>
+        <!-- Navegació del lloc web-->
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Inici</a></li>
+                <li><a href="./nosaltres_ca.html"><i class="fa-solid fa-users"></i> Sobre nosaltres</a></li>
+                <li><a href="./donar_ca.html"><i class="fa-solid fa-hand-holding-heart"></i> Donar</a></li>
+                <li><a href="./voluntariat_ca.html"><i class="fa-solid fa-handshake-angle"></i> Voluntariat</a></li>
+                <li><a href="./projectes_ca.html"><i class="fa-solid fa-border-all"></i> Projectes</a></li>
+                <li><a href="./contacte_ca.html"><i class="fa-solid fa-envelope"></i> Contacte</a></li>
+            </ul>
+        </nav>
+        <!-- Botons de canvi d'idioma -->
+        <div class="canvi-idioma">
+            <a href="./projectes_ca.html" title="Català"><img src="../IMG/BANDERES/CA.png" alt="Català"></a>
+            <a href="../ES/projectes_es.html" title="Español"><img src="../IMG/BANDERES/ES.png" alt="Español"></a>
+            <a href="../EN/projectes_en.html" title="English"><img src="../IMG/BANDERES/EN.png" alt="English"></a>
+        </div>
+    </header>
+
+    <!-- Contingut principal de la pàgina -->
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../IMG/PORTADES/portada_1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../IMG/PORTADES/portada_2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../IMG/PORTADES/portada_3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Següent</span>
+            </button>
+        </div>
+
+        <br> <!-- Salt de línia perquè no estigui tant pegat-->
+
+        <h1 style="font-style: italic;">Proyectos</h2> <!-- Títol de la secció de projectes -->
+        
+        <br> <!-- Salt de línia perquè no estigui tant pegat-->
+        
+        <div class="contenidor-serveis"> <!-- Contenidor dels projectes -->
+            <div class="caixa-servei"> <!-- Caixa de la primera xerrada -->
+                <img src="../IMG/PROJECTES/xerrada_1.png" alt="">
+                <br>
+                <br>
+                <h3>Xerrada a l'institut <strong>Jesuïtes Bellvitge - Joan XXIII</strong></h3>
+                <p>Xerrada a l'instituto <strong>Jesuïtes Bellvitge - Joan XXIII</strong> als alumnes d'Administració y Direcció d'Empreses (ADE) sobre l'allotjament jove i el dret a un habitatge digne.</p>
+            </div>
+            <div class="caixa-servei">
+                <img src="../IMG/PROJECTES/xerrada_2.png" alt="">
+                <br>
+                <br>
+                <h3>Presencia al <strong>Parlament de Catalunya</strong></h3>
+                <p>Vam anar al <strong>Parlament de Catalunya</strong> a formar conscienciació als polítics parlamentaris i testimonis presents sobre el problema de l'habitatge actual i la dificultat per a la gent jove per accedir-hi.</p>
+            </div>
+            <div class="caixa-servei">
+                <img src="../IMG/PROJECTES/xerrada_3.png" alt="">
+                <br>
+                <br>
+                <h3>Recollida de fons en col·laboració amb l'ONG <strong>"La Vinya"</strong></h3>
+                <p>Recollida d'aliments i donacions amb l'objectiu d'ajudar a les persones sense llar.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Peu de pàgina del lloc web -->
+    <footer>
+        <p>&copy; 2026 ONG viveHOY. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
