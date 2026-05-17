@@ -19,6 +19,12 @@ body { /* A tota el cos */
     min-height: 100vh; /* L'altura mínima del cos és del 100% de la pantalla */
 }
 
+/* Fem que totes les imatges siguin responsives */
+img {
+    max-width: 100%; /* Les imatges no poden ser més amples que el seu contenidor */
+    height: auto; /* L'alçada s'ajusta automàticament per mantenir la proporció */
+}
+
 
 header { /* A la capçalera */
     background-color: #ffffff; /* Color de fons de la capçalera */
@@ -325,5 +331,71 @@ footer p { /* Al text del peu de pàgina */
 
     .contenidor-projectes { /* Els projectes en pantalles petites */
         grid-template-columns: 1fr; /* Passem a 1 columna */
+    }
+
+    .logotip img { /* El logotip en pantalles petites */
+        height: 80px; /* Reduïm l'alçada del logotip */
+    }
+
+    .logo-principal { /* El logotip principal en pantalles petites */
+        max-height: 90px; /* Reduïm l'alçada màxima del logotip principal */
+    }
+
+    .canvi-idioma img { /* Les banderes en pantalles petites */
+        width: 28px; /* Reduïm la mida de les banderes */
+    }
+
+    h1, h2 { /* Les capçaleres en pantalles petites */
+        font-size: 1.5em; /* Reduïm la mida de les capçaleres */
+    }
+
+    p { /* El text en pantalles petites */
+        font-size: 1em; /* Reduïm la mida del text */
+    }
+
+    button[type="submit"] { /* El botó d'enviar en pantalles petites */
+        width: 100%; /* El botó ocupa tota l'amplada */
+    }
+
+    .boto { /* El botó principal en pantalles petites */
+        width: 100%; /* El botó ocupa tota l'amplada */
+        text-align: center; /* El text del botó es centra */
+    }
+}
+
+/* Estils per a pantalles molt petites (mòbils) */
+@media (max-width: 480px) {
+    main { /* El contingut principal en pantalles molt petites */
+        width: 95%; /* L'amplada del contingut principal augmenta */
+        padding: 20px 15px; /* El padding es redueix */
+    }
+
+    .baner { /* El bàner en pantalles molt petites */
+        padding: 30px 15px; /* El padding del bàner es redueix */
+    }
+
+    .baner h1 { /* La capçalera del bàner en pantalles molt petites */
+        font-size: 1.5em; /* La mida de la font es redueix més */
+    }
+
+    nav ul li a { /* Cada element de la navegació en pantalles molt petites */
+        font-size: 16px; /* La mida de la font de la navegació es redueix */
+    }
+
+    .caixa-servei { /* Les caixes de servei en pantalles molt petites */
+        padding: 20px; /* El padding de les caixes es redueix */
+    }
+
+    .caixa-projecte { /* Les caixes de projecte en pantalles molt petites */
+        padding: 15px; /* El padding de les caixes es redueix */
+    }
+
+    .boto { /* El botó en pantalles molt petites */
+        font-size: 16px; /* La mida de la font del botó es redueix */
+        padding: 10px 20px; /* El padding del botó es redueix */
+    }
+
+    fieldset { /* El fieldset en pantalles molt petites */
+        padding: 10px; /* El padding del fieldset es redueix */
     }
 }
