@@ -30,6 +30,7 @@ header { /* A la capçalera */
     position: fixed; /* Posem que la capçalera es quedi fixa a la part alta de la pàgina */
     width: 100%; /* L'amplada de la capçalera */
     top: 0; /* La capçalera es posa a la part superior de la pantalla */
+    z-index: 1000; /* Aquesta línia fa que la capçalera es posi per sobre d'altres elements */
 }
 
 .logotip img { /* Al logotip */
@@ -237,6 +238,55 @@ footer p { /* Al text del peu de pàgina */
     margin: 0; /* Traiem els marges per defecte perquè quedi ben centrat */
 }
 
+/* --- ESTILS DELS PROJECTES --- */
+.contenidor-projectes { /* Contenidor dels projectes */
+    display: grid; /* Utilitzem CSS Grid per alinear en files i columnes */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnes per defecte */
+    gap: 20px; /* Espai entre les caixes de projecte */
+    margin-top: 20px; /* Marge superior */
+}
+
+.caixa-projecte { /* Cada caixa de projecte */
+    background-color: #f9f9f9; /* Color de fons de la caixa */
+    padding: 20px; /* Espai interior de la caixa */
+    border-radius: 8px; /* Extrems arrodonits */
+    border: 1px solid #ddd; /* Vora grisa per defecte */
+    border-top: 5px solid #4D7011; /* Vora superior verda */
+    text-align: center; /* Text centrat */
+    display: flex; /* Flex per a l'interior */
+    flex-direction: column; /* Col·loquem en columna interiorment */
+    transition: background-color 0.3s ease; /* Transició suau per l'hover */
+}
+
+.caixa-projecte:hover { /* Efecte en passar el ratolí */
+    background-color: #e8f5e9; /* Fons verd clar en hover */
+}
+
+.caixa-projecte img { /* Imatges de dins de la caixa */
+    width: 100%; /* Ocupen tota l'amplada de la caixa */
+    height: auto; /* Alçada automàtica per mantenir la proporció */
+    border-radius: 5px; /* Extrems arrodonits de la imatge */
+    margin-bottom: 10px; /* Marge inferior sota la imatge */
+}
+
+.caixa-projecte h3 { /* Títols dels projectes */
+    color: #0F57A3; /* Color blau */
+    font-size: 1.2em; /* Mida de la lletra */
+    margin-bottom: 10px; /* Marge inferior */
+}
+
+.caixa-projecte p { /* Paràgrafs dels projectes */
+    font-size: 1em; /* Mida del text */
+    margin-bottom: 0; /* Sense marge inferior addicional */
+}
+
+/* Pantalles mitjanes (tauletes) */
+@media (max-width: 992px) {
+    .contenidor-projectes {
+        grid-template-columns: repeat(2, 1fr); /* Passem a 2 columnes */
+    }
+}
+
 /* Estils per a pantalles petites (mòbils i tauletes) */
 @media (max-width: 768px) {
     header { /* La capçalera en pantalles petites */
@@ -271,5 +321,9 @@ footer p { /* Al text del peu de pàgina */
 
     .baner h1 { /* La capçalera del bàner en pantalles petites */
         font-size: 2em; /* La mida de la font de la capçalera del bàner */
+    }
+
+    .contenidor-projectes { /* Els projectes en pantalles petites */
+        grid-template-columns: 1fr; /* Passem a 1 columna */
     }
 }
